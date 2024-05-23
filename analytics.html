@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics Dashboard</title>
+</head>
+<body>
+    <h1>Analytics Dashboard</h1>
+    <h2>Common Queries</h2>
+    <ul>
+        {% for query, count in common_queries %}
+        <li>{{ query }}: {{ count }}</li>
+        {% endfor %}
+    </ul>
+    <h2>Feedback Statistics</h2>
+    <ul>
+        {% for feedback, count in feedback_stats %}
+        <li>{{ feedback }}: {{ count }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
